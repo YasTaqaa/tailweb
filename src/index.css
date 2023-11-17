@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +16,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.videos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.video {
+  margin: 10px;
+  background: rgb(166, 74, 160);
+  padding: 10px;
+  border: 1px solid #030655;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.font-face {
+  font-family: 'Times New Roman';
+  src: url('D:\elyweb\tailweb\src') format('truetype');
+  /* Ganti '/path/to/times-new-roman.ttf' dengan path ke file font yang Anda miliki. */
+}
+
+.bg-image-url {
+  background-image: url('https://cdn.discordapp.com/attachments/935856252494417982/1171021566981718046/wpphi3.jpg?ex=655b29d2&is=6548b4d2&hm=5eafc811eb78fb147742339ead17bacee131a302c8a0ca50bd64c2db19999dd6&');
+}
+
+.bg-image-url-1 {
+  background-image: url('https://cdn.discordapp.com/attachments/935856252494417982/1171021637756399646/wppphi3.jpg?ex=655b29e2&is=6548b4e2&hm=e66f3dd1bf59f1505762935ea5dff40d2edd2d0309fd10076a687700b65eee8b&');
+}
+
+
