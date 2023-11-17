@@ -9,7 +9,7 @@ export default function Example() {
       <div className='overflow hidden' class='bg-gradient-to-r from-pink-300 to-white'>
         <Navbar />
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900 lg:px-8 font-serif">Trailer Battlesuit Honkai Impact :</h2>
+        <h2 className="text-4xl font-bold tracking-tight text-gray-900 lg:px-8">Trailer Battlesuit Honkai Impact :</h2>
         <div className="mt-2 grid grid-cols-3 gap-x-6 gap-y-10 lg:px-8">
         <div class='video-container'>
             <div class='video'>

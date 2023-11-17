@@ -33,11 +33,6 @@ code {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.font-face {
-  font-family: 'Times New Roman';
-  src: url('D:\elyweb\tailweb\src') format('truetype');
-  /* Ganti '/path/to/times-new-roman.ttf' dengan path ke file font yang Anda miliki. */
-}
 
 .bg-image-url {
   background-image: url('https://cdn.discordapp.com/attachments/935856252494417982/1171021566981718046/wpphi3.jpg?ex=655b29d2&is=6548b4d2&hm=5eafc811eb78fb147742339ead17bacee131a302c8a0ca50bd64c2db19999dd6&');
