@@ -7,6 +7,7 @@ const Features = lazy(() => import('./Features'));
 const Navbar = lazy(() => import('./Navbar'));
 const Video = lazy(() => import('./video'));
 const Profil = lazy(() => import('./profil'));
+const Wallpaper = lazy(() => import('./wallpaper'));
 
 const App = () => (
 
@@ -19,6 +20,7 @@ const App = () => (
         <Route path="/Navbar" element={<Navbar />} />
         <Route path="/video" element={<Video />} />
         <Route path="/profil" element={<Profil />} />
+        <Route path="/wallpaper" element={<Wallpaper />} />
         </Routes>
       </Suspense>
     </Router>

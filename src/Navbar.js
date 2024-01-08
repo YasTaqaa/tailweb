@@ -7,8 +7,11 @@ const navigation = [
     { name: 'Character', href: '/Product' },
     { name: 'Trailer', href: '/Features' },
     { name: 'Music Video', href: '/video' },
+    { name: 'Wallpapers', href: '/wallpaper' },
 
   ]
+
+
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -81,7 +84,7 @@ export default function Example() {
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://cdn.discordapp.com/attachments/935856252494417982/1171668886949736518/output-onlinegiftools.gif?ex=655d84af&is=654b0faf&hm=44c5a090f94a9fef7b4789b1a929a6feb2d6b7ea96024845621ee118c7eedaf5&"
                   alt=""
                 />
               </a>

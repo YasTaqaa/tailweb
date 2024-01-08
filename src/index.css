@@ -26,7 +26,7 @@ code {
 
 .video {
   margin: 10px;
-  background: rgb(166, 74, 160);
+  background: rgb(197, 186, 196);
   padding: 10px;
   border: 1px solid #030655;
   border-radius: 5px;
@@ -42,4 +42,64 @@ code {
   background-image: url('https://cdn.discordapp.com/attachments/935856252494417982/1171021637756399646/wppphi3.jpg?ex=655b29e2&is=6548b4e2&hm=e66f3dd1bf59f1505762935ea5dff40d2edd2d0309fd10076a687700b65eee8b&');
 }
 
+.bg-image-url-chara {
+  background-image: url('https://cdn.discordapp.com/attachments/935856252494417982/1192424401283584000/035ae92594e6771f90a511d1fcd4c3ef_4699208351245229542.png?ex=65a906c3&is=659691c3&hm=f074125d50f886329c2e79383fd746a4e9e110ab147e5dfdb20944d06cd3634b&');
+}
+
+/* CSS Container for Product Images */
+.product-container {
+  position: relative;
+  border: 8px solid #ccc; /* Border style */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Scale image while maintaining aspect ratio */
+  transition: opacity 0.3s ease-in-out; /* Transition effect for opacity */
+}
+
+.product-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Transition effect for opacity */
+}
+
+.product-info h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  padding: 8px; /* Padding for the name */
+  background-color: rgba(0, 0, 0, 0.7); /* Background color for the name */
+  border-top-right-radius: 8px; /* Rounded corners for the name */
+  border-top-left-radius: 8px; /* Rounded corners for the name */
+}
+
+.product-info p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.875rem;
+}
+
+.tombol-next {
+  right: 400px;
+}
+
+.tombol-back {
+  left: 400px;
+}
+.tombol-button {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background-color: #ffffff00; /* Sesuaikan warna latar belakang dengan kebutuhan Anda */
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 

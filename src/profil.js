@@ -32,6 +32,14 @@ const Profile = () => {
               </li>
             </ul>
           </div>
+          <div className="mt-5 flex items-center justify-center">
+            <a
+              href="/"
+              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500"
+            >
+              Home
+            </a>
+          </div>
         </div>
       </div>
     </div>
