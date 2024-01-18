@@ -9,6 +9,7 @@ const Video = lazy(() => import('./video'));
 const Profil = lazy(() => import('./profil'));
 const Wallpaper = lazy(() => import('./wallpaper'));
 
+
 const App = () => (
 
     <Router>

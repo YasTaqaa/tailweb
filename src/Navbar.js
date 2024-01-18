@@ -4,17 +4,17 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Character', href: '/Product' },
+    { name: 'Characters', href: '/Product' },
     { name: 'Trailer', href: '/Features' },
     { name: 'Music Video', href: '/video' },
     { name: 'Wallpapers', href: '/wallpaper' },
-
   ]
-
 
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [activeTab, setActiveTab] = useState(null);
+
 
   return (
     <div className="bg-white">
@@ -41,8 +41,15 @@ export default function Example() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+            {navigation.map((item, index) => (
+              <a
+              key={item.name}
+              href={item.href}
+              className={`text-sm font-semibold leading-6 text-gray-900 border-b-2 border-transparent 
+                ${index === activeTab ? 'border-b-2 border-blue-500' : ''}
+                hover:text-blue-500 hover:border-b-2 hover:border-blue-500 `}
+              onClick={() => setActiveTab(index)}
+              >
                 {item.name}
               </a>
             ))}
@@ -76,6 +83,12 @@ export default function Example() {
                     />
             </div>
         </nav>
+        <div className="container mx-auto">
+          {navigation.map((item, index) => (
+            <div key={item.name} className={`${index === activeTab ? 'block' : 'hidden'}`}>  
+            </div>
+          ))}
+        </div>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -96,29 +109,6 @@ export default function Example() {
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-                <div className="py-6">
-                  <a
-                    href="Navbar"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    
-                  </a>
-                </div>
-              </div>
             </div>
           </Dialog.Panel>
         </Dialog>

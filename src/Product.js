@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 
 import Navbar from './Navbar';
 
@@ -66,7 +67,11 @@ const products = [
       <div className="bg-cover bg-center bg-image-url-chara" style={{backgroundAttachment:'fixed', backgroundSize:'cover'}}>
       <Navbar />
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="text-4xl font-bold tracking-tight text-blue-300">Character :</h2>
+      <div className='flex items-center justify-center'>
+          <p>
+            <img src = "https://cdn.discordapp.com/attachments/935856252494417982/1197468801260855357/GeneratedImage_5.png?ex=65bb60ba&is=65a8ebba&hm=6d55393d0a30a387a303931189576d33a08f3dae91c8f09d2fcffc71e29c476b&" height={100} width={300}/>
+         </p>
+     </div>
         <div>
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-10 ">
             {products.map((product) => (

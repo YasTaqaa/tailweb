@@ -87,11 +87,11 @@ code {
 }
 
 .tombol-next {
-  right: 400px;
+  right: 300px;
 }
 
 .tombol-back {
-  left: 400px;
+  left: 300px;
 }
 .tombol-button {
   position: absolute;
@@ -102,4 +102,3 @@ code {
   font-size: 24px;
   cursor: pointer;
 }
-
